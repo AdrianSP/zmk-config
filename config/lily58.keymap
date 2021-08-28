@@ -114,17 +114,17 @@
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |   !  |   @  |   #  |   $  |   %  |-------.    .-------|   ^  |   &  |   *  |   (  |   )  |      |
  * |------+------+------+------+------+------|   ~   |    |   `   |------+------+------+------+------+------|
- * |      |      |      |      |      |      |-------|    |-------|      |  <-  |   ^  |   V  |  ->  |      |
+ * |      |      |      |      |      |      |-------|    |-------|      |      |      |      |      |      |
  * '-----------------------------------------/      /      \      \-----------------------------------------'
  *                    |      |      |      |/      /        \      \|ADJUST|      |      |
  *                    '---------------------------'          '---------------------------'
  */
 			bindings = <
-&kp F11 &kp F1   &kp F2  &kp F3   &kp F4     &kp F5                        &none      &none     &none     &none    &none     &none
-&kp F12 &kp F6   &kp F7  &kp F8   &kp F9     &kp F10                       &none      &kp HOME  &kp END   &none    &kp EQUAL &kp PLUS
-&trans  &kp EXCL &kp AT  &kp HASH &kp DOLLAR &kp PRCNT                     &kp CARET  &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR  &none
-&trans  &none    &none   &none    &none      &none     &kp TILDE &kp GRAVE &none      &kp LEFT  &kp UP    &kp DOWN &kp RIGHT &none
-                         &trans   &trans     &trans    &trans    &trans    &mo ADJUST &trans    &trans
+&kp F11 &kp F1   &kp F2  &kp F3   &kp F4     &kp F5                        &none      &none    &none     &none    &none     &none
+&kp F12 &kp F6   &kp F7  &kp F8   &kp F9     &kp F10                       &none      &kp HOME &kp END   &none    &kp EQUAL &kp PLUS
+&trans  &kp EXCL &kp AT  &kp HASH &kp DOLLAR &kp PRCNT                     &kp CARET  &kp AMPS &kp ASTRK &kp LPAR &kp RPAR  &none
+&trans  &none    &none   &none    &none      &none     &kp TILDE &kp GRAVE &none      &none    &none     &none    &none     &none
+                         &trans   &trans     &trans    &trans    &trans    &mo ADJUST &trans   &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
